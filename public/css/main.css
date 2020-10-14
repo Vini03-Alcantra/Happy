@@ -7,6 +7,21 @@ body{
     height: 100vh;    
 }
 
+/*acessa e modifica o estilo raiz do browser*/
+:root {
+    font-size: 62.5%;
+}
+
+body, input, button, textarea {
+    /*font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    font-family: 'Nunito', sans-serif;
+    mesma coisa embaixo
+    */
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
+
 #page-landing {
     background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);    
     text-align: center;
