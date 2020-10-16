@@ -29,8 +29,11 @@ aside footer p{
     margin-top: .8rem;
 }
 
+/*button*/
 a.create-orphanage{
     position: absolute;
+    right: 4rem;
+    bottom: 4rem;
 
     width: 6.4rem;
     height: 6.4rem;
@@ -41,4 +44,9 @@ a.create-orphanage{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a.create-orphanage:hover{
+    transition: .5s;
+    background: #17d6eb;
 }
