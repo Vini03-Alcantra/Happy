@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="./public/css/animations.css" />
     <link rel="stylesheet" href="./public/css/page-orphanages.css" />
     <title>Localize Um Orfananto | Happy</title>
+
     <link rel="icon" href="./public/images/logo-icon.png" />    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+
+    <!--Link para o leafletjs, mapa no javascript-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>    
+
   </head>
   <body>
         <div id="page-orphanages">
-            <aside>
+            <aside class="animate-right">
                 <header>
                     <img src="./public/images/map-marker.svg" alt="Happy">
 
@@ -25,10 +34,13 @@
                     <p>Santa Catarina</p>
                 </footer>
             </aside>
-            <div id="mapid"></div>
+            <div id="mapid">
+                
+            </div>
             <a href="create-orphanage" class="create-orphanage" title="Cadastre Um Orfanato">
                 <img src="./public/images/plus.svg" alt="Criar orfanato">
             </a>
         </div>
+        <script src="./public/scripts/page-orphanages.js"></script>
   </body>
 </html>
