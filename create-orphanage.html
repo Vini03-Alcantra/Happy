@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/css/main.css" />
     <link rel="stylesheet" href="./public/css/animations.css" />
-    <link rel="stylesheet" href="./public/css/page-create-orphanage.css" />
-    <link rel="stylesheet" href=".\public\css\sidebar.css" />
+    <link rel="stylesheet" href="./public/css/page_create_orphanage.css" />
+    <link rel="stylesheet" href="./public/css/sidebar.css" />
+    <link rel="stylesheet" href="./public/css/map.css" />
     <title>Adicione Um Orfanato | Happy</title>
 
     <link rel="icon" href="./public/images/logo-icon.png" />    
@@ -21,7 +22,7 @@
 
   </head>
   <body>
-        <div id="create-orphanages">
+        <div id="page-create-orphanage">
             <aside class="animate-right sidebar">
                 <img src="./public/images/map-marker.svg" alt="Happy">
                 <footer>
@@ -31,69 +32,30 @@
                 </footer>
             </aside>            
 
-            <main class="animate-appear with-sidebar">
-                <div class="orphanage-details">
-                    <img src="./public/images/home.jpg" alt="Lar das Meninas" />
-
-                    <div class="image">
-                        <button onclick="selectImage(event)" class="active" type="button">
-                            <img src="https://source.unsplash.com/random?id=1" alt="Lar das Meninas">
-                        </button>
-
-                        <button onclick="selectImage(event)" type="button">
-                            <img src="https://source.unsplash.com/random?id=2" alt="Lar das Meninas">
-                        </button>
-
-                        <button onclick="selectImage(event)" type="button">
-                            <img src="https://source.unsplash.com/random?id=3" alt="Lar das Meninas">
-                        </button>
-
-                        <button onclick="selectImage(event)" type="button">
-                            <img src="https://source.unsplash.com/random?id=4" alt="Lar das Meninas">
-                        </button>
-
-                        <button onclick="selectImage(event)" type="button">
-                            <img src="https://source.unsplash.com/random?id=5" alt="Lar das Meninas">
-                        </button>
-
-                        <button onclick="selectImage(event)" type="button">
-                            <img src="https://source.unsplash.com/random?id=6" alt="Lar das Meninas">
-                        </button>
-                    </div>
-                
-
-                <div class="orphanage-details-content">
-                    <h1>Lar das Meninas</h1>
-
-                    <p>Presta assitência a crianças de 06 a 15 anos que se encontram em situação de risco e/ou vulnerabilidade social</p>
-
+            <main class="animate-appear with-sidebar">                
+                <form action="">
+                    <fieldset>
+                    <legend>Dados</legend>
                     <div class="map-container">
                         <div id="mapid"></div>
+
                         <footer>
-                            <a href="">Ver rotas no Google Maps</a>
+                            <a href="#" id="select-point">
+                                Clique no mapa para adicionar a localização 
+                            </a>
                         </footer>
                     </div>
-                    <hr />
-                    <h2>Instruções para visita</h2>
-                    <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
-
-                    <div onclick="selectImage(event)" class="open-details">
-                        <div class="hour">
-                            <img src="./public/images/clock.svg" alt="Horários">
-                            Horário de visitas das 18h até ás 8h
-                        </div>
-                        <div class="open-on-weekends">
-                            <img src="./public/images/info.svg" alt="Informação">
-                            Atendemos fim de semana
-                        </div>                        
+                    
+                    <div class="input-block">
+                        <label for="name">Nome</label>
+                        <input id="name" name="name">
                     </div>
-
-                    <button class="primary-button" type="button">
-                        <img src="./public/images/whatsapp.svg" alt="Chamar no Whatsapp">
-                        Entrar em Contato
-                    </button>
-                </div>
-            </div>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>Visitação</legend>
+                </fieldset>
+                </form>
             </main>            
             
         </div>
