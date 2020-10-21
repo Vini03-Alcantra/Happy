@@ -5,8 +5,8 @@ const express = require('express');
 const server = express();
 
 // criar uma rota
-server.get('/', () => {
-    console.log('Hello World')
+server.get('/', (request, response) => {
+    return response.send("Olá sou o back end")
 })
 
 //ligar o servidor 
