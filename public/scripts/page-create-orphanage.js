@@ -14,6 +14,7 @@ const icon = L.icon({
 let marker;
 
 map.on('click', (event) => {
+
     const lat = event.latlng.lat;
     const lng = event.latlng.lng;
 
@@ -27,3 +28,15 @@ map.on('click', (event) => {
     marker = L.marker([lat, lng], {icon})
     .addTo(map)
 })
+
+//add label photos 
+function addPhotoField(){
+    // pegar o container de fotos #imagens
+    const container = document.querySelector('#images')
+    // pegar o container para duplicar .new-image
+    const fieldsContainer = document.querySelector('.new-upload');
+    //realizar o clone da última imagem adicionada    
+    let newFieldContainer = fieldsContainer.cloneNode(true)
+    // adicionar o clone ao container de #images
+    container.appendChild(newFieldContainer)    
+}
