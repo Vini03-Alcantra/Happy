@@ -61,3 +61,16 @@ function deleteField(event){
     span.parentNode.remove();
 
 }
+
+
+function toggleSelect(event){
+    //retirar a classe .active dos botões
+    document.querySelectorAll('.button-select button')
+    .forEach((button) => {
+        button.classList.remove('button-active')
+    })
+    /// pegar o botão clicado
+    // verificar se sim ou não fo
+    //atualizar o input hidden com o valor selecionado
+
+}
