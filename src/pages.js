@@ -1,3 +1,5 @@
+const orphanages = require('./database/fakedata.js')
+
 module.exports = {
 
     index(req, res){

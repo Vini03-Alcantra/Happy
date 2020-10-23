@@ -12,15 +12,18 @@ const icon = L.icon({
     popupAnchor: [170, 2]
 })
 
-//create popup overlay
-const popup = L.popup({
-    closeButton: false,
-    className: 'map-popup',
-    minWidth: 240,
-    maxWidth: 240
-}).setContent('lar das meninas <a href="/orphanage?id=1" class="choose-orphanage"> <img src="/images/arrow-white.svg"> </a>')
+function addMarker({id, name, lat, lng}){
+    //create popup overlay
+    const popup = L.popup({
+        closeButton: false,
+        className: 'map-popup',
+        minWidth: 240,
+        maxWidth: 240
+    }).setContent(`${name} <a href="/orphanage?id=${id}" class="choose-orphanage"> <img src="/images/arrow-white.svg"> </a>`)
 
 
-L.marker([-3.7581102,-38.5694252], {icon})
-    .addTo(map)
-    .bindPopup(popup)    
+    L.marker([lat, lng], {icon})
+        .addTo(map)
+        .bindPopup(popup)    
+        
+}
