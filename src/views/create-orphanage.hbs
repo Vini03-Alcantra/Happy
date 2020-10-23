@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/css/main.css" />
-    <link rel="stylesheet" href="./public/css/animations.css" />
-    <link rel="stylesheet" href="./public/css/page_create_orphanage.css" />
-    <link rel="stylesheet" href="./public/css/sidebar.css" />
-    <link rel="stylesheet" href="./public/css/map.css" />
-    <link rel="stylesheet" href="./public/css/forms.css" />
-    <link rel="stylesheet" href="./public/css/buttons.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/page_create_orphanage.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link rel="stylesheet" href="/css/forms.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
     <title>Adicione Um Orfanato | Happy</title>
 
-    <link rel="icon" href="./public/images/logo-icon.png" />    
+    <link rel="icon" href="/images/logo-icon.png" />    
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
 
     <!--Link para o leafletjs, mapa no javascript-->
@@ -26,10 +26,10 @@
   <body>
         <div id="page-create-orphanage">
             <aside class="animate-right sidebar">
-                <img src="./public/images/map-marker.svg" alt="Happy">
+                <img src="/images/map-marker.svg" alt="Happy">
                 <footer>
                     <button onclick="history.back()">
-                        <img src="./public/images/arrow.svg" alt="Voltar"> 
+                        <img src="/images/arrow.svg" alt="Voltar"> 
                     </button>
                 </footer>
             </aside>            
@@ -71,13 +71,13 @@
                             <div class="new-upload">
                                 <input name="images" placeholder="Cole o link da foto aqui" required>
                                 <span onclick="deleteField(event)">
-                                    <img src="./public/images/x-circle.svg" alt="Remover Foto">
+                                    <img src="/images/x-circle.svg" alt="Remover Foto">
                                 </span>
                             </div>
 
                         </div>
                         <button type="button" onclick="addPhotoField()">
-                            <img src="./public/images/add_two.png" alt="Nova imagem" width="40px" height="40px">
+                            <img src="/images/add_two.png" alt="Nova imagem" width="40px" height="40px">
                         </button>
                     </div>
                 </fieldset>
@@ -112,6 +112,6 @@
             </main>            
             
         </div>
-        <script src="./public/scripts/page-create-orphanage.js"></script>
+        <script src="/scripts/page-create-orphanage.js"></script>
   </body>
 </html>
