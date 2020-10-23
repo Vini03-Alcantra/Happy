@@ -27,3 +27,6 @@ function addMarker({id, name, lat, lng}){
         .bindPopup(popup)    
         
 }
+
+const orphanagesSpan = document.querySelectorAll('.orphanages span');
+console.log(orphanagesSpan)
