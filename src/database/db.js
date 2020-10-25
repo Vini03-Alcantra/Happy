@@ -1,7 +1,5 @@
 const Database = require('sqlite-async');
-const Databse = require('sqlite-async');
 
-Database.open(__dirname + '/database.sqlite').then(execute)
 
 function execute(db){
     
@@ -17,6 +15,8 @@ function execute(db){
             instructions TEXT,
             opening_hours TEXT,
             open_on_weekends TEXT
-        )
+        );
     `)
 }
+
+module.exports = Database.open(__dirname + '/database.sqlite').then(execute);
