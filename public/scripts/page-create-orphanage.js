@@ -80,3 +80,8 @@ function toggleSelect(event){
     
 
 }
+
+function validate(event) {
+    //validar se lat e lng estão preenchidos
+    //event.preventDefault()
+}
